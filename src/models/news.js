@@ -16,11 +16,6 @@ const newsSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         required:true
     },
-    newsImage:{
-        type:Buffer,
-        default:`https://www.euractiv.com/wp-content/uploads/sites/2/2014/03/news-default.jpeg`
-
-    }
 },{timestamps:true})
 
 const News = mongoose.model('News',newsSchema);
